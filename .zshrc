@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/arthurrimbun/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -148,10 +148,5 @@ alias dk='docker'
 alias v='vault'
 
 # --- Misc settings ---
-
-source $HOME/bin/appspace.sh
-source $HOME/bin/proxy.sh
-source $HOME/bin/vault.sh
-proxy_cntlm
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
