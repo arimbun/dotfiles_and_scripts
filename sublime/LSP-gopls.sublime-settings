@@ -1,0 +1,16 @@
+// Settings in here override those in "LSP-gopls/LSP-gopls.sublime-settings"
+
+{
+    "clients": {
+        "gopls": {
+            "enabled": true,
+            "env": {
+                "PATH": "/usr/local/go/bin/go",
+            }
+        }
+    },
+    "show_references_in_quick_panel": true,
+    "log_debug": true,
+    "inhibit_snippet_completions": true,
+    "inhibit_word_completions": true,
+}
