@@ -121,9 +121,13 @@ alias ll='ls -la'
 alias vzsh='vim ~/.zshrc'
 alias sou='source ~/.zshrc'
 alias h='history'
-alias k='kubectl'
+alias v='vault'
 alias tf='terraform'
 alias vim='nvim'
 alias notes='vim ~/notes.txt'
+
+# --- GitHub repository shortcuts ---
+
+alias gh-dotfiles='cd $HOME/src/github.com/arimbun/dotfiles_and_scripts'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
