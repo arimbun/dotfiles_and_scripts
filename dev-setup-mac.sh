@@ -2,26 +2,25 @@
 
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install go gomplate kubectl zsh-autocompletions zsh-syntax-highlighting zsh-git-prompt gpg2 neovim node
+brew cask install clipy
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Zsh autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-# Zsh syntax highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Install dotfiles
 cp .* $HOME
 
-# Homebrew packages
-brew install go gomplate kubectl zsh-autocompletions zsh-syntax-highlighting zsh-git-prompt gpg2 neovim
+# Neovim
+npm install -g neovim
+python3 -m pip install --user --upgrade pynvim
 
-# Homebrew - clipboard manager
-brew cask install clipy
+neovim_dir=.config/nvim
+mkdir $HOME/$neovim_dir && cp $neovim_dir/init.vim $HOME/$neovim_dir
 
-# Go packages
+# Go
 # go get -u github.com/nsf/gocode                 # completion
 # go get -u github.com/zmb3/gogetdoc              # documentation
 # go get -u golang.org/x/tools/cmd/goimports      # import resolution/rewriting
