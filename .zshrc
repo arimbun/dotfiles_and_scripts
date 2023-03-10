@@ -129,5 +129,6 @@ alias notes='vim ~/notes.txt'
 # --- GitHub repository shortcuts ---
 
 alias gh-dotfiles='cd $HOME/src/github.com/arimbun/dotfiles_and_scripts'
+alias gh-notes='cd $HOME/src/github.com/arimbun/notes'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
