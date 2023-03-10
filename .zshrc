@@ -73,6 +73,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
     git
     zsh-autosuggestions
+    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -103,7 +104,6 @@ export EDITOR='nvim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source /Users/arthur.rimbun/src/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # --- Git aliases ---
 

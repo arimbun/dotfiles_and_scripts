@@ -9,11 +9,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # Zsh autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+# Zsh syntax highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 # Install dotfiles
 cp .* $HOME
 
 # Homebrew packages
-brew install go gomplate kubectl zsh zsh-autocompletions zsh-syntax-highlighting zsh-git-prompt gpg2 neovim
+brew install go gomplate kubectl zsh-autocompletions zsh-syntax-highlighting zsh-git-prompt gpg2 neovim
 
 # Homebrew - clipboard manager
 brew cask install clipy
