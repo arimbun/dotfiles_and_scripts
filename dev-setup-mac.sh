@@ -17,6 +17,10 @@ cp .* $HOME
 npm install -g neovim
 python3 -m pip install --user --upgrade pynvim
 
+# VimPlug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 neovim_dir=.config/nvim
 mkdir $HOME/$neovim_dir && cp $neovim_dir/init.vim $HOME/$neovim_dir
 
