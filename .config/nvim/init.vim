@@ -23,11 +23,9 @@ set ttyfast                 " Speed up scrolling in Vim
 " set noswapfile            " disable creating swap file
 " set backupdir=~/.cache/vim " Directory to store backup files.
 
-
 call plug#begin()
   Plug 'dracula/vim'
   Plug 'ryanoasis/vim-devicons'
-  Plug 'SirVer/ultisnips'
   Plug 'honza/vim-snippets'
   Plug 'scrooloose/nerdtree'
   Plug 'preservim/nerdcommenter'
@@ -36,8 +34,6 @@ call plug#begin()
   Plug 'jvirtanen/vim-hcl'
   Plug 'wbthomason/packer.nvim'
 call plug#end()
-
-
 
 colorscheme dracula
 " open new split panes to right and below
@@ -48,3 +44,6 @@ set splitbelow
 autocmd VimEnter * NERDTree | wincmd p
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+" coc.nvim - Remap <cr> to make it confirm completion
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
