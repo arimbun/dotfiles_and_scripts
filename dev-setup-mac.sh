@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install go gomplate kubectl zsh-autocompletions zsh-syntax-highlighting zsh-git-prompt gpg2 neovim node
