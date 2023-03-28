@@ -4,16 +4,13 @@ set -euo pipefail
 
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install go gomplate kubectl zsh-autocompletions zsh-syntax-highlighting zsh-git-prompt gpg2 neovim node
+brew install go gomplate kubectl zsh-autocomplete zsh-syntax-highlighting zsh-git-prompt gpg2 neovim node
 brew install clipy --cask
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-# Install dotfiles
-cp .* $HOME
 
 # Neovim
 npm install -g neovim
