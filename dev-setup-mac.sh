@@ -5,7 +5,7 @@ set -euo pipefail
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install go gomplate kubectl zsh-autocompletions zsh-syntax-highlighting zsh-git-prompt gpg2 neovim node
-brew cask install clipy
+brew install clipy --cask
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
