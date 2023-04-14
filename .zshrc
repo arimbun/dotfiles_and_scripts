@@ -115,16 +115,32 @@ alias gpohf='git push origin HEAD -f'
 alias gpot='git push origin --tag'
 alias gtl='git tag -l'
 
-# --- Others ---
+# Docker aliases
 
-alias ll='ls -la'
-alias vzsh='vim ~/.zshrc'
-alias sou='source ~/.zshrc'
+alias d='docker'
+alias di='d images'
+alias dp='d ps'
+
+# Kubernetes aliases
+
+alias k='kubectl'
+alias ka='k apply'
+alias kg='k get'
+alias kgp='kg pod'
+alias kgd='kg deployment'
+alias kgs='kg services'
+alias kl='k logs'
+
+# Other aliases
+
 alias h='history'
-alias v='vim'
+alias ll='ls -la'
+alias notes='v $HOME/src/github.com/arimbun/notes'
+alias sou='source ~/.zshrc'
 alias tf='terraform'
+alias v='vim'
 alias vim='nvim'
-alias notes='vim ~/notes.txt'
+alias vz='v ~/.zshrc'
 
 # --- GitHub repository shortcuts ---
 
