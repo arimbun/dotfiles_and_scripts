@@ -111,7 +111,7 @@ alias gbdm='git branch --merged | grep -v \* | xargs git branch -d'
 alias gcdf='git clean -d -f'
 alias glst='git log --stat'
 alias gpoh='git push origin HEAD'
-alias gpohf='git push origin HEAD -f'
+alias gpohf='gpoh -f'
 alias gpot='git push origin --tag'
 alias gtl='git tag -l'
 
