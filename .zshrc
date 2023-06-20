@@ -139,7 +139,7 @@ alias kl='k logs'
 # Other aliases
 
 alias h='history'
-alias hgrep='h | grep '
+alias hg='h | grep '
 alias ll='ls -la'
 alias notes='v $HOME/src/github.com/arimbun/notes'
 alias sou='source ~/.zshrc'
